@@ -3273,8 +3273,11 @@ function hideMultilanguage(){
 
 function populateMainPage(){
     	j('#loading').show();
-    	var headerBackBtn=defaultPagePath+'categoryMsgPage.html';
-	    var pageRef=defaultPagePath+'category.html';
+    	//var headerBackBtn=defaultPagePath+'categoryMsgPage.html';
+	    //var pageRef=defaultPagePath+'category.html';
+        var headerBackBtn=defaultPagePath+'headerPageForSMSOperation.html';
+        var pageRef=defaultPagePath+'fairMessageTable.html';
+    
     
              j('#mainHeader').load(headerBackBtn);
              j('#mainContainer').load(pageRef);
@@ -3481,9 +3484,7 @@ function getSms(){
         				var sms = data[i];
         				//smsList.push(sms);
                         if(lastSmsId < sms._id){
-                            alert("in local lastSmsId : "+lastSmsId +" sms._id"+sms._id);
                             if(smsFilterBox(sms.body)){
-                                alert("validated sms body : "+sms.body);
                             // cordova.plugins.backgroundMode.wakeUp();
                             // alert("saving sms");
                             saveSMS(sms); 
