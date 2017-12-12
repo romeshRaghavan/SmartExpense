@@ -4523,6 +4523,10 @@ body {
   float: left !important;
 }
 
+.center {
+  float: center !important;
+}
+
 .mb-0 {
   margin-bottom: 0px !important;
 }
@@ -4686,7 +4690,7 @@ blockquote .author {
   color: #27ae60;
 }
 .button.button-primary.active, .button.button-primary.button-fill, .button.button-primary.active-state {
-  background: #27ae60;
+  background: #41ab0b;
   color: #ffffff;
 }
 .button.button-secondary {
@@ -4726,18 +4730,18 @@ img {
 
 .action-red {
   background: #ff2d55 !important;
-  font-size: 11px;
+  font-size: 12px;
   text-align: center;
 }
 
 .action-green {
   background: #2db62d !important;
-  font-size: 11px;
+  font-size: 12px;
   text-align: center;
 }
 .action-blue {
-   background: #546e7a !important;
-   font-size: 11px;
+   background: #007aff !important;
+   font-size: 12px;
    text-align: center;
 }
 .icon-20 {
@@ -4903,7 +4907,7 @@ html:not(.watch-active-state) .list-block .item-link:active {
   background: #fff;
   color: #454545;
   font-family: 'robotolight', sans-serif;
-  text-transform: uppercase;
+/*  text-transform: uppercase;*/
 }
 .navbar:after {
   background: #454545;
@@ -4923,11 +4927,11 @@ html:not(.watch-active-state) .list-block .item-link:active {
 
 .navbar.navbar-clear {
   transition: all 400ms;
-  background: transparent;
+  /*background: transparent;*/
   color: #B28973;
 }
 .navbar.navbar-clear:after {
-  background: transparent;
+  /*background: transparent;*/
 }
 .navbar.navbar-clear .kkicon {
   font-size: 20px;
@@ -5025,8 +5029,8 @@ html:not(.watch-active-state) .list-block .item-link:active {
 .panel .list-block .list-group ul li.divider {
   background: #4d4d4d;
   padding: 0 15px;
-  text-transform: uppercase;
-  font-size: 12px;
+/*  text-transform: uppercase;*/
+ font-size: 12px;
   line-height: 25px;
 }
 .panel .list-block .list-group ul .js-toggle-menu {
@@ -5099,7 +5103,7 @@ html:not(.watch-active-state) .list-block .item-link:active {
 .dashboard-menu .menu-link > span:last-child {
   display: block;
   color: #FFFFFF;
-  text-transform: uppercase;
+/*  text-transform: uppercase;*/
   font-size: 8px;
   position: absolute;
   width: 100%;
@@ -5121,7 +5125,7 @@ html:not(.watch-active-state) .list-block .item-link:active {
 }
 .picker-modal h2,
 .popup h2 {
-  text-transform: uppercase;
+/*  text-transform: uppercase;*/
   font-family: 'robotoblack', sans-serif;
   color: #B28973;
   font-size: 28px;
@@ -5261,8 +5265,9 @@ html:not(.watch-active-state) .list-block .item-link:active {
   width: 70px;
   height: 70px;
   display: inline-block;
-  border-radius: 10px;
-  background: #97ca4e;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid #97ca4e;
   line-height: 1;
   padding: 3px;
 }
@@ -5539,8 +5544,8 @@ html:not(.watch-active-state) .list-block .item-link:active {
   text-align: center;
 }
 .comments-box li .comments-list .image .ava img, .addclaim .comments-list .image .ava img {
-  width: 40px;
-  height: 40px;
+  width: 51px;
+  height: 51px;
   border-radius: 50%;
   border: 1px solid #ccc;
   padding: 2px;
@@ -5892,7 +5897,7 @@ html:not(.watch-active-state) .list-block .item-link:active {
   opacity: 0.5;
 }
 .page-content .tabshead {margin: 10px 0 0; padding: 0 5px;}
-.navbar-fixed .page-content, .navbar-through .page-content {padding-top: 22px;}
+.navbar-fixed .page-content, .navbar-through .page-content {padding-top: 44px;}
 .tabbar-fixed .page-content, .tabbar-through .page-content, .toolbar-fixed .page-content, .toolbar-through .page-content {padding-bottom: 0;}
 .list-block {margin: 35px 0 0;}
 .views .lefticonspace {margin: 0;}
@@ -5910,6 +5915,10 @@ html:not(.watch-active-state) .list-block .item-link:active {
   .page-content .list-block .addclaim input {width: 66px;}
   .page-content .list-block .addclaim textarea {width: 100%;}
   .list-block .addclaim .item-inner {padding-right: 8px;}
+  .loginscreenbanner .logincontext h3 {font-size: 23px; margin: 0; line-height: normal; letter-spacing: -1px; }
+  .loginscreenbanner .logincontext h5 {font-size: 12px; padding: 3px;}
+
+
 
 }
 @media screen and (max-width: 360px) and (min-width: 321px)  {
@@ -5921,18 +5930,53 @@ html:not(.watch-active-state) .list-block .item-link:active {
   .page-content .list-block .opentogglelist select {width: 70px;}
   .page-content .list-block .addclaim input {width: 76px;}
   .page-content .list-block .addclaim textarea {width: 100%;}
+  .loginscreenbanner .logincontext h3 {font-size: 27px; margin: 0; line-height: normal; letter-spacing: -1px; }
+  .loginscreenbanner .logincontext h5 {font-size: 12px; padding: 3px;}
 }
 
 
 
 .list-block .item-content {min-height: auto; padding-left: 8px;}
 .opentogglelist, .addclaim {display: none; padding-left: 8px; font-size: 11px; position: relative;}
+.smart {display: block;}
 .list-block .opentogglelist input, .list-block .opentogglelist textarea, .list-block .addclaim input, .list-block .addclaim textarea {background-color:#fff; border: 1px solid #ddd; padding: 3px; width: 89px; display: inline-block; height: auto; font-size: 11px;}
 .list-block .opentogglelist select, .list-block .addclaim select {background-color:#fff; border: 1px solid #ddd; padding: 3px; width: 84px; display: inline-block; height: auto; font-size: 11px; -webkit-appearance: menulist; -moz-appearance: menulist; -ms-appearance: menulist; appearance: menulist; color: #999;}
 .list-block .opentogglelist textarea, .list-block .addclaim textarea {width: 100%; display: block; color: #999;}
 .allbtn {text-align: center;}
 .btnall {border: 1px solid #0598b5; background-color: #13a8c6; color: #fff; padding: 4px; font-size: 12px; text-transform: capitalize; margin-top: 8px; border-radius: 3px; } 
-.closeme {position: absolute; top: -12%; right: 2%; width: 20px; height: 20px; } 
+.btnall {border: 1px solid #0598b5; background-color: #13a8c6; color: #fff; padding: 4px; font-size: 12px; text-transform: capitalize; margin-top: 8px; border-radius: 3px; }
+.imagess { color: #fff; padding: 0; font-size: 35px; text-transform: capitalize;} 
+.imagess { color: #fff; padding: 0; font-size: 35px; text-transform: capitalize;} 
+.btnALL {border: 1px solid #41ab0c; background-color: ##41ab0c; color: #fff; padding: 4px; font-size: 12px; text-transform: capitalize; margin-top: 8px; border-radius: 3px; } 
+.closeme {position: absolute; top: -8%; right: 2%; width: 20px; height: 20px; } 
+.closemenow {position: absolute; top: 0%; right: 2%; width: 20px; height: 20px; } 
 .addclaim {background-color: #ececec; margin-top: 25px; } 
 .addclaim h4 {text-align: center; padding: 0; margin: 0 8px 0 0; font-size: 14px; background-color: #41ab0b; color: #fff;}
 .list-block .addclaim .item-inner {padding-top: 0; padding-right: 8px;}
+.loginexplogo {}
+.loginscreen {margin: 0;}
+.loginscreenbanner {position: relative;}
+.logincontext {position: absolute; top: 0; padding: 5%;}
+.logincontext h5, .logincontext h3 {color: #fff;}
+.logincontext h3 {font-size: 30px; margin: 0; line-height: 35px; letter-spacing: -1px; } 
+.logincontext h5 {font-size: 14px; margin: 10px 0 0 0; line-height: normal; letter-spacing: 0; font-weight: normal; background: #85b43e; color: #fff; padding: 5px; text-align: center; }
+.loginsection h2 {margin: 0; font-size: 35px;}
+.page-content .loginsection {margin: 0;}
+.page-content .loginsection .input-text {margin-bottom: 20px;}
+.loginform {border: 1px solid #ccc; padding: 15px; background: #fff; }
+.addtowishlist h2 {margin: 10px 0 0 0; }
+.sendrest {margin: 5px 0 10px; display: none;}
+.selected {background-color: #0598b5; color: #fff; }
+.sendrest .btnall {width: 80px; padding: 6px;}
+.button__badge {
+  background-color: #fa3e3e;
+  border-radius: 4px;
+  color: white;
+  padding: 0px 2px 0px 2px;
+  font-size: 10px;
+  position: absolute; /* Position the badge within the relatively positioned button */
+  top: 7px;
+  right: -2px;
+}
+.camimg{width: 53%;padding: 4px;}
+
