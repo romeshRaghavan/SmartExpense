@@ -40,17 +40,12 @@
         Define a specific version of PhoneGap to build into your app.
         <preference name="phonegap-version"       value="3.5.0" />
     -->
-    
-    
-    <content src="index.html" />
-    <preference name="android-minSdkVersion" value="14" />
     <preference name='phonegap-version' value='cli-7.0.1' />
     <feature name="http://api.phonegap.com/1.0/device" />
     <feature name="http://api.phonegap.com/1.0/camera"/>
     <feature name="http://api.phonegap.com/1.0/file"/>
     <feature name="http://api.phonegap.com/1.0/media"/>
     <feature name="http://api.phonegap.com/1.0/network"/>
-    
     
         <!-- Core plugins -->
     <plugin name="cordova-plugin-battery-status" />
